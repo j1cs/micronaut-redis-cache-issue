@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: cache
+
+redis:
+  uri: redis://localhost
+  caches:
+    data:
+      maximumSize: 20
+  cache:
+    value-serializer: io.micronaut.jackson.serialize.JacksonObjectSerializer
